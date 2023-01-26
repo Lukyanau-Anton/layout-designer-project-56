@@ -1,0 +1,282 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+.container .title h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .subtitle h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-nav .container-logo-menu .menu a, .header-nav .container-logo-menu .logo a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cacaca;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.bg-img {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+}
+.bg-img .wrapper {
+  max-width: 1200px;
+  position: relative;
+  padding: 200px 20px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  position: absolute;
+  top: 25px;
+  width: 98.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav .container-logo-menu {
+  display: flex;
+  align-items: center;
+}
+.header-nav .container-logo-menu .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+.header-nav .container-logo-menu .logo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.header-nav .container-logo-menu .menu {
+  display: flex;
+}
+.header-nav .container-logo-menu .menu a {
+  margin-right: 24px;
+}
+.header-nav .container-logo-menu .menu:last-child {
+  margin-right: 0;
+}
+.header-nav .container-logo-menu a:active {
+  color: #ffffff;
+}
+.header-nav .search .site-search {
+  border-radius: 50px;
+  background: #3c3b3d;
+  min-width: 248px;
+  max-width: 100%;
+  padding: 5px 10px;
+}
+.header-nav .search .site-search::-moz-placeholder {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  color: #757575;
+}
+.header-nav .search .site-search:-ms-input-placeholder {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  color: #757575;
+}
+.header-nav .search .site-search::placeholder {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  color: #757575;
+}
+.header-nav .search .site-search:hover {
+  background: #cacaca;
+  transform: scale(1.3);
+  transform-origin: top right;
+  transition: 1.8s;
+}
+
+.container {
+  text-align: center;
+}
+.container .title h1 {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.container .subtitle h2 {
+  color: #ffffff;
+  margin: 0 0 31px;
+}
+.container .description {
+  margin-bottom: 17px;
+}
+.container .description p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.container .registr {
+  margin: 0 auto;
+  max-width: 570px;
+}
+.container .registr .area-form {
+  display: flex;
+  justify-content: space-between;
+}
+.container .registr .area-form .input-field {
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  min-width: 270px;
+  min-height: 50px;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  background: none;
+  color: #cacaca;
+}
+.container .registr .area-form .input-field::-moz-placeholder {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.container .registr .area-form .input-field:-ms-input-placeholder {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.container .registr .area-form .input-field::placeholder {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.container .registr .btn-header {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #34C176;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.container .registr .btn-header:hover {
+  background-color: #f89202;
+  transition: 1s;
+}
+.container .registr .btn-header:active {
+  background-color: #5328a1;
+  transition: 0.1s;
+}
+
+@media (max-width: 1240px) {
+  .bg-img {
+    width: 100vw;
+    background-position: center;
+  }
+  .wrapper {
+    width: auto;
+    padding: 0 20px;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    top: 27px;
+    left: 20px;
+  }
+  .header-nav .container-logo-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-nav .container-logo-menu .logo {
+    margin-bottom: 17px;
+  }
+  .header-nav .container-logo-menu .menu {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 3px;
+  }
+  .header-nav .container-logo-menu .menu:last-child {
+    margin-bottom: 18px;
+  }
+  .header-nav .search .site-search {
+    width: calc(100vw - 40px);
+  }
+  .header-nav .search .site-search:hover {
+    transform: none;
+    background-color: #cacaca;
+    transition: 2s;
+  }
+  .container {
+    padding-top: 50px;
+  }
+  .container .title {
+    padding: 0 20px;
+  }
+  .container .title h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .container .subtitle {
+    padding: 0 20px;
+  }
+  .container .subtitle h2 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 16px;
+  }
+  .container .description {
+    padding: 0 20px;
+    margin-bottom: 16px;
+  }
+  .container .registr {
+    padding: 0 auto;
+  }
+  .container .registr .area-form {
+    flex-direction: column;
+  }
+}
