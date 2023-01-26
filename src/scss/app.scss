@@ -1,47 +1,6 @@
 @import "variables";
 @import "general";
-
-// patterns
-
-%header-one-desktop {
-  font-size: 60px;
-  line-height: 90px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-%header-two-desktop {
-  font-size: 38px;
-  line-height: 57px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-%header-one-mobile {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-%header-two-mobile {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-%nav-link {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: $dark-gray;
-}
+@import "mainpage";
 
 // for all doc
 
@@ -59,15 +18,15 @@
   background-size: cover;
 
   width: 100vw;
+}
 
-  .wrapper {
-    max-width: 1200px;
+.wrapper {
+  max-width: 1200px;
 
-    position: relative;
-  
-    padding: 200px 20px;
-    margin: 0 auto;
-  }
+  position: relative;
+
+  padding: 200px 20px;
+  margin: 0 auto;
 }
 
 .header-nav {
@@ -252,7 +211,7 @@
 
 // ------------------------------------1 page mobile
 
-@media (max-width:1240px) {
+@media (max-width: 1240px) {
   .bg-img {
     width: 100vw;
     background-position: center;
@@ -260,7 +219,7 @@
 
   .wrapper {
     width: auto;
-    padding: 0 20px;
+    // padding: 200px 20px;
   }
 
   .header-nav {
@@ -297,7 +256,7 @@
       .search {  
 
         .site-search {
-          width: calc(100vw - 40px);       
+          width: calc(100vw - 40px);  
         }
 
         .site-search:hover {

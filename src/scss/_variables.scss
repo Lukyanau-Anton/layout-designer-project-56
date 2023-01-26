@@ -6,3 +6,43 @@ $green: #34C176;
 $orange: #f89202;
 $purple: #5328a1;
 $red: #95390c;
+
+%header-one-desktop {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  
+%header-two-desktop {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  
+%header-one-mobile {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  
+%header-two-mobile {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  
+%nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $dark-gray;
+}

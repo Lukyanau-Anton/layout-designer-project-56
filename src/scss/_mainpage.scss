@@ -1,0 +1,210 @@
+@import "variables";
+@import "general";
+
+#page-pricing {
+      
+  .wrapper {
+    padding: 100px 0 0;
+  }
+  
+
+  .title {
+    text-align: center;
+    margin-bottom: 45px;
+
+    h2 {
+      @extend %header-two-desktop;
+      color: #ffffff;
+    }    
+  }
+
+  .content {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    gap: 50px;
+
+    .box {
+      padding: 0;
+      margin: 0;
+
+      min-height: 615px;
+
+      text-align: center;
+
+      .pricing-item {
+        
+        .pricing-title {
+          color: #ffffff;
+          text-transform: uppercase;
+
+          font-family: Roboto, sans-serif;
+          font-weight: 400;
+
+          font-size: 24px;
+          line-height: 1.5em;
+
+          padding-top: 24px;
+          margin-bottom: 200px;
+        }
+
+        .pricing-value {
+          color: #ffffff;
+          text-transform: uppercase;
+          
+          
+          font-family: Roboto, sans-serif;
+          font-weight: 400;
+
+          font-size: 64px;
+          line-height: 1;
+
+          margin-bottom: 40px;
+
+          sup {
+            margin-left: 16px;
+
+            font-size: 32px;
+            line-height: 1.5;
+          }
+        }
+
+        .btn {
+          display: inline-block;
+
+          border: 1px solid #FFFFFF;
+          border-radius: 5px;
+
+          margin:0 25px 64px;
+          padding: 21px 111px;
+
+          text-decoration: none;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+
+        .btn:hover {
+          background: rgb(4 0 255 / 0.1);
+         
+          border: 1px double rgb(4, 0, 255);
+
+          transition: 1.5s;
+        }
+
+        .btn:active {
+          background: rgba(255, 0, 0, 0.1);
+         
+          border: 1px double rgb(255, 0, 0);
+
+          transition: 1.5s;
+        }
+
+        .pricing-footer {
+          margin: 0 25px;
+
+          font-size: 12.8px;
+          line-height: 150%;
+          
+          color: #ffffff;
+        }
+      }
+
+      .bg-free {
+        background-image: url("../images/subscribe_1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        height: 100%;
+
+        border-radius: 1rem;
+      }
+
+      .bg-basic {
+        background-image: url("../images/subscribe_2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        height: 100%;
+
+        border-radius: 1rem;
+      }
+
+      .bg-premium {
+        background-image: url("../images/subscribe_3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        height: 100%;
+
+        border-radius: 1rem;
+      }
+      
+      .bg-basic:hover {
+        box-shadow: rgba(255 255 255 / 0.4) 0px -23px 25px 0px inset, rgba(0 0 0 / 0.5) 0px -36px 30px 0px inset, rgba(0 0 0 / 0.1) 0px -79px 40px 0px inset, rgba(0 0 0 / 0.06) 0px 2px 1px, rgba(0 0 0 / 0.09) 0px 4px 2px, rgba(0 0 0 / 0.09) 0px 8px 4px, rgba(0 0 0 / 0.09) 0px 16px 8px, rgba(0 0 0 / 0.09) 0px 32px 16px;
+        transition: 1s;
+      }
+
+      .bg-free:hover {
+        box-shadow: rgba(255 255 255 / 0.4) 0px -23px 25px 0px inset, rgba(0 0 0 / 0.5) 0px -36px 30px 0px inset, rgba(0 0 0 / 0.1) 0px -79px 40px 0px inset, rgba(0 0 0 / 0.06) 0px 2px 1px, rgba(0 0 0 / 0.09) 0px 4px 2px, rgba(0 0 0 / 0.09) 0px 8px 4px, rgba(0 0 0 / 0.09) 0px 16px 8px, rgba(0 0 0 / 0.09) 0px 32px 16px;
+        transition: 1s;
+      }
+
+      .bg-premium:hover {
+        box-shadow: rgba(255 255 255 / 0.4) 0px -23px 25px 0px inset, rgba(0 0 0 / 0.5) 0px -36px 30px 0px inset, rgba(0 0 0 / 0.1) 0px -79px 40px 0px inset, rgba(0 0 0 / 0.06) 0px 2px 1px, rgba(0 0 0 / 0.09) 0px 4px 2px, rgba(0 0 0 / 0.09) 0px 8px 4px, rgba(0 0 0 / 0.09) 0px 16px 8px, rgba(0 0 0 / 0.09) 0px 32px 16px;
+        transition: 1s;
+      }
+    }
+
+
+
+  }  
+
+  
+
+  .description {
+    margin-top: 43px;
+
+    text-align: center;
+
+    p {
+      color: #ffffff;
+    }
+  }
+
+
+  @media (max-width: 1240px) {
+    .title {
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+
+      .box {
+        max-width: 375px;
+        height: 619px;
+
+        .pricing-item {
+          .pricing-title {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .description {
+      margin: 19px 20px 0;
+      p {
+        margin: 19px 20px 0;
+      }
+    }
+  }
+}
