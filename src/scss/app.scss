@@ -2,6 +2,7 @@
 @import "general";
 @import "mainpage";
 @import "newspage";
+@import "downloadpage";
 
 // for all doc
 
@@ -215,7 +216,8 @@
       cursor: pointer;
     }
 
-    .btn-header:hover {
+    .btn-header:hover,
+    .btn-header:focus {
       background-color: $orange;
       transition: 1s;
     }
