@@ -2,21 +2,6 @@
 @import "general";
 
 #page-pricing {
-      
-  .wrapper {
-    padding: 100px 0 0;
-  }
-  
-
-  .title {
-    text-align: center;
-    margin-bottom: 45px;
-
-    h2 {
-      @extend %header-two-desktop;
-      color: #ffffff;
-    }    
-  }
 
   .content {
     margin: 0 auto;
@@ -159,12 +144,7 @@
         transition: 1s;
       }
     }
-
-
-
   }  
-
-  
 
   .description {
     margin-top: 43px;
@@ -175,7 +155,6 @@
       color: #ffffff;
     }
   }
-
 
   @media (max-width: 1240px) {
     .title {

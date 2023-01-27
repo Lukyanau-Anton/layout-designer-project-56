@@ -1,6 +1,7 @@
 @import "variables";
 @import "general";
 @import "mainpage";
+@import "newspage";
 
 // for all doc
 
@@ -60,6 +61,7 @@
   
       a {
         @extend %nav-link;
+        position: relative;
       }
     } 
   
@@ -69,6 +71,7 @@
       a {
         margin-right: 24px;
         @extend %nav-link;
+        position: relative;
       }
     }
 
@@ -78,6 +81,21 @@
     
     a:active {
       color: #ffffff;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      height: 2px;
+      width: 0;
+      background: rgb(225, 0, 255);
+      border-radius: 50px;
+      transition: width 0.3s ease;
+    }
+
+    a:hover::before {
+      width: 100%;
     }
   }
 
@@ -256,7 +274,7 @@
       .search {  
 
         .site-search {
-          width: calc(100vw - 40px);  
+          width: 100%;
         }
 
         .site-search:hover {
@@ -303,5 +321,12 @@
 
       }
     }
+  }
+}
+
+@media (max-width: 548px) {
+
+  .search {
+    width: calc(100vw - 40px);  
   }
 }
