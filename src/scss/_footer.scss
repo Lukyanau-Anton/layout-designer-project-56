@@ -1,0 +1,158 @@
+@import "variables";
+@import "general";
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+footer {
+  position: relative;
+  .wrapper {
+    padding: 0;
+  }
+
+  .top-row {
+    padding: 3rem 0;
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+    .column {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        margin-bottom: 15px;
+
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $gray;
+        text-decoration: none;
+
+        position: relative;
+      }
+
+      a::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        height: 2px;
+        width: 0;
+        background: rgb(248, 0, 120);
+        border-radius: 50px;
+        transition: width 0.3s ease;
+      }
+    
+      a:hover::before {
+        width: 3px;
+      }
+    }
+
+    .column:last-child {      
+      img {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .light-row {
+    position: absolute;
+    top: 1;
+    width: 100%;
+
+    background: #cacaca;
+    
+    box-sizing: border-box;
+
+    height: 2px;
+
+    border: 1px solid #CACACA;
+    border-radius: 0px;
+  }
+
+  .bottom-row {
+    padding: 2rem 0;
+    display: flex;
+    gap: 16px;
+
+    a {
+      color: $gray;
+      text-decoration: none;
+      
+      position: relative;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      height: 2px;
+      width: 0;
+      background: rgb(0, 157, 255);
+      border-radius: 50px;
+      transition: width 0.3s ease;
+    }
+  
+    a:hover::before {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  footer{
+    .wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+      .top-row{
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a{
+          flex: 1 1 60%;
+        }
+      }
+
+      .bottom-row {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 697px) {
+  footer{
+    .wrapper{
+      .top-row{
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  footer{
+    .wrapper{
+      .top-row{
+        align-items: flex-start;
+        text-align: start;
+      }
+      .bottom-row{
+        flex-direction: column;
+      }
+    }
+  }
+}

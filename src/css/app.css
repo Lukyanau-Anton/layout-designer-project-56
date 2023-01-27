@@ -33,6 +33,10 @@
   src: url("../fonts/LeagueSpartan-Bold.ttf");
   font-weight: 700;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -88,6 +92,10 @@ section .wrapper .title h2 {
   src: url("../fonts/LeagueSpartan-Bold.ttf");
   font-weight: 700;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -276,6 +284,10 @@ section .wrapper .title h2 {
   src: url("../fonts/LeagueSpartan-Bold.ttf");
   font-weight: 700;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -415,6 +427,10 @@ section .wrapper .title h2 {
   src: url("../fonts/LeagueSpartan-Bold.ttf");
   font-weight: 700;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -479,6 +495,184 @@ section .wrapper .title h2 {
   }
   #page-app .wrapper .content img {
     margin: 0;
+  }
+}
+.container .title h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .subtitle h2, section .wrapper .title h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-nav .container-logo-menu .menu a, .header-nav .container-logo-menu .logo a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cacaca;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cacaca;
+  font-size: 16px;
+  background-color: #08020d;
+}
+
+section .wrapper {
+  padding: 100px 0 0;
+}
+section .wrapper .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+section .wrapper .title h2 {
+  color: #ffffff;
+}
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+footer {
+  position: relative;
+}
+footer .wrapper {
+  padding: 0;
+}
+footer .top-row {
+  padding: 3rem 0;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .top-row .column {
+  display: flex;
+  flex-direction: column;
+}
+footer .top-row .column h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 27px;
+}
+footer .top-row .column a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e0e0e0;
+  text-decoration: none;
+  position: relative;
+}
+footer .top-row .column a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background: rgb(248, 0, 120);
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+footer .top-row .column a:hover::before {
+  width: 3px;
+}
+footer .top-row .column:last-child img {
+  margin-right: 24px;
+}
+footer .light-row {
+  position: absolute;
+  top: 1;
+  width: 100%;
+  background: #cacaca;
+  box-sizing: border-box;
+  height: 2px;
+  border: 1px solid #CACACA;
+  border-radius: 0px;
+}
+footer .bottom-row {
+  padding: 2rem 0;
+  display: flex;
+  gap: 16px;
+}
+footer .bottom-row a {
+  color: #e0e0e0;
+  text-decoration: none;
+  position: relative;
+}
+footer .bottom-row a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 0;
+  background: rgb(0, 157, 255);
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+footer .bottom-row a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 845px) {
+  footer .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer .wrapper .top-row {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  footer .wrapper .top-row a {
+    flex: 1 1 60%;
+  }
+  footer .wrapper .bottom-row {
+    justify-content: center;
+  }
+}
+@media (max-width: 697px) {
+  footer .wrapper .top-row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 450px) {
+  footer .wrapper .top-row {
+    align-items: flex-start;
+    text-align: start;
+  }
+  footer .wrapper .bottom-row {
+    flex-direction: column;
   }
 }
 * {

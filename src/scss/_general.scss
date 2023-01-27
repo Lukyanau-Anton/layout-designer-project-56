@@ -10,6 +10,10 @@
   font-weight: 700;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -36,12 +40,3 @@ section {
   }
 }
 
-// @media (max-width: 1240px) {
-  
-//   .title {
-  
-//     h2 {
-//       font-size: 18px;
-//     }
-//   }
-// }
