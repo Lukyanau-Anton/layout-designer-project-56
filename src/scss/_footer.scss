@@ -136,6 +136,25 @@ footer {
       }
       .bottom-row{
         flex-direction: column;
+
+        a {
+          width: min-content;
+        }
+
+        a::before {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          height: 2px;
+          width: 0;
+          background: rgb(0, 157, 255);
+          border-radius: 50px;
+          transition: width 0.3s ease;
+        }
+      
+        a:hover::before {
+          width: 100%;
+        }
       }
     }
   }

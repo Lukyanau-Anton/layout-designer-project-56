@@ -660,6 +660,24 @@ footer .bottom-row a:hover::before {
   footer .wrapper .bottom-row {
     flex-direction: column;
   }
+  footer .wrapper .bottom-row a {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  footer .wrapper .bottom-row a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 0;
+    background: rgb(0, 157, 255);
+    border-radius: 50px;
+    transition: width 0.3s ease;
+  }
+  footer .wrapper .bottom-row a:hover::before {
+    width: 100%;
+  }
 }
 .container .title h1 {
   font-size: 60px;
@@ -952,6 +970,111 @@ section .wrapper .title h2 {
     height: 137px;
   }
   #page-discography .wrapper .albums .card h3 {
+    word-wrap: break-word;
+    width: 137px;
+  }
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cacaca;
+  font-size: 16px;
+  background-color: #08020d;
+}
+
+section .wrapper {
+  padding: 100px 0 0;
+}
+section .wrapper .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+section .wrapper .title h2 {
+  color: #ffffff;
+}
+
+.container .title h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .subtitle h2, section .wrapper .title h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-nav .container-logo-menu .menu a, .header-nav .container-logo-menu .logo a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cacaca;
+}
+
+#page-similar .wrapper {
+  margin-bottom: 100px;
+}
+#page-similar .wrapper .title {
+  text-align: start;
+  margin-bottom: 48px;
+}
+#page-similar .wrapper .artists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+#page-similar .wrapper .artists .card {
+  text-align: center;
+}
+#page-similar .wrapper .artists .card img {
+  margin-bottom: 17px;
+  width: 250px;
+  height: 250px;
+}
+#page-similar .wrapper .artists .card h3 {
+  margin-bottom: 1px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 1240px) {
+  #page-similar .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #page-similar .wrapper .title h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #page-similar .wrapper .artists .card img {
+    width: 137px;
+    height: 137px;
+  }
+  #page-similar .wrapper .artists .card p {
     word-wrap: break-word;
     width: 137px;
   }
