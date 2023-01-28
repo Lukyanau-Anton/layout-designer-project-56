@@ -1,0 +1,71 @@
+@import "general";
+
+#page-discography {
+  .wrapper {
+
+    .title {
+      text-align: start;
+      margin-bottom: 48px;
+    }
+
+    .albums {
+      display: flex;
+      gap: 25px 50px;
+      flex-wrap: wrap;
+
+      .card {
+        
+        img {
+          margin-bottom: 18px;
+          width: 250px;
+          height: 250px;
+        }
+
+        h3 {
+          font-weight: bold;
+          font-size: 18px;
+
+          color: #fff;
+        }
+
+        p {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  #page-discography {
+    .wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .title {
+        
+        h2 {
+          font-size: 18px;
+          line-height: 1.5;
+        }
+      }
+
+      .albums {
+
+        .card {
+
+          img {
+            width: 137px;
+            height: 137px;
+          }
+
+          h3 {
+            word-wrap: break-word;
+            width: 137px;
+          }
+        }
+      }
+
+    }
+  }
+}

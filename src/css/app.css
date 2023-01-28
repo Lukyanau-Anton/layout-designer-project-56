@@ -861,7 +861,7 @@ section .wrapper .title h2 {
 #page-popular-track .wrapper .columns .column .row .name .named .musician {
   font-weight: 400;
   font-size: 12.8px;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 @media (max-width: 1240px) {
@@ -871,6 +871,7 @@ section .wrapper .title h2 {
   }
   #page-popular-track .wrapper .title h2 {
     font-size: 18px;
+    line-height: 1.5;
   }
   #page-popular-track .wrapper .columns {
     flex-direction: column;
@@ -878,6 +879,81 @@ section .wrapper .title h2 {
   }
   #page-popular-track .wrapper .columns .column {
     width: 100%;
+  }
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cacaca;
+  font-size: 16px;
+  background-color: #08020d;
+}
+
+section .wrapper {
+  padding: 100px 0 0;
+}
+section .wrapper .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+section .wrapper .title h2 {
+  color: #ffffff;
+}
+
+#page-discography .wrapper .title {
+  text-align: start;
+  margin-bottom: 48px;
+}
+#page-discography .wrapper .albums {
+  display: flex;
+  gap: 25px 50px;
+  flex-wrap: wrap;
+}
+#page-discography .wrapper .albums .card img {
+  margin-bottom: 18px;
+  width: 250px;
+  height: 250px;
+}
+#page-discography .wrapper .albums .card h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+#page-discography .wrapper .albums .card p {
+  color: #e0e0e0;
+}
+
+@media (max-width: 1240px) {
+  #page-discography .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #page-discography .wrapper .title h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #page-discography .wrapper .albums .card img {
+    width: 137px;
+    height: 137px;
+  }
+  #page-discography .wrapper .albums .card h3 {
+    word-wrap: break-word;
+    width: 137px;
   }
 }
 * {
