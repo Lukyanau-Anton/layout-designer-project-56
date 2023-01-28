@@ -1,0 +1,91 @@
+@import "general";
+
+#page-popular-track {
+  .wrapper {
+    padding-top: 100px;
+
+    .title {
+
+      h2 {
+        margin-bottom: 48px;
+        text-align: start;
+      }
+    }
+
+    .columns {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: calc(1200px - 50px);
+
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+                  
+          .name {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 55px;
+              height: 55px;
+            }
+
+            .named {
+              
+              .song {
+                font-weight: 700;
+                font-size: 12.8px;
+
+                text-transform: uppercase;
+
+                color: #fff;
+              }
+
+              .musician {
+                font-weight: 400;
+                font-size: 12.8px;
+
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  #page-popular-track {
+    
+    .wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .title {
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+
+      .columns {
+        flex-direction: column;
+        gap: 25px;
+
+        .column {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

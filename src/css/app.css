@@ -785,6 +785,101 @@ section .wrapper .title h2 {
     padding: 0;
   }
 }
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cacaca;
+  font-size: 16px;
+  background-color: #08020d;
+}
+
+section .wrapper {
+  padding: 100px 0 0;
+}
+section .wrapper .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+section .wrapper .title h2 {
+  color: #ffffff;
+}
+
+#page-popular-track .wrapper {
+  padding-top: 100px;
+}
+#page-popular-track .wrapper .title h2 {
+  margin-bottom: 48px;
+  text-align: start;
+}
+#page-popular-track .wrapper .columns {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+#page-popular-track .wrapper .columns .column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 1150px;
+}
+#page-popular-track .wrapper .columns .column .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page-popular-track .wrapper .columns .column .row .name {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+#page-popular-track .wrapper .columns .column .row .name img {
+  width: 55px;
+  height: 55px;
+}
+#page-popular-track .wrapper .columns .column .row .name .named .song {
+  font-weight: 700;
+  font-size: 12.8px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#page-popular-track .wrapper .columns .column .row .name .named .musician {
+  font-weight: 400;
+  font-size: 12.8px;
+  color: #fff;
+}
+
+@media (max-width: 1240px) {
+  #page-popular-track .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #page-popular-track .wrapper .title h2 {
+    font-size: 18px;
+  }
+  #page-popular-track .wrapper .columns {
+    flex-direction: column;
+    gap: 25px;
+  }
+  #page-popular-track .wrapper .columns .column {
+    width: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
