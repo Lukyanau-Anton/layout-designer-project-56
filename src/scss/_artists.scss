@@ -1,0 +1,92 @@
+@import "variables";
+@import "general";
+
+.bg-img-artist {
+  background-image: url('../images/Morten\ Harket.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  &.artists {
+    text-align: start;
+    
+    padding: 50px 0 33px;
+
+    .title {
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      p {
+      color: #fff;
+      margin-bottom: 48px;
+      font-weight: normal;
+      }
+    }
+
+    .description {
+      display: flex;
+      gap: 24px;
+
+      a {
+        box-sizing: border-box  ;
+        
+        text-decoration: none;
+
+        
+
+        display: flex;
+        padding: 20px 30px;        
+
+        border-radius: 5px;
+
+        width: 200px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 16px;
+          
+        }
+
+        .btn-text {
+          text-transform: uppercase;
+          font-size: 12.8px;
+
+          padding-top: 2px;
+        }
+      }
+
+      a:nth-child(1){
+        background: $purple;
+      }
+
+      a:nth-child(2){
+        background: $red  ;
+      }
+
+      a:active {
+        background: linear-gradient(135deg, $red 40%, $purple 60%);
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    padding-left: 0;
+    &.artists {
+      .title {
+        padding: 0;
+      }
+      .subtitle {
+        padding: 0;
+      }
+      .description {
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+  }
+}

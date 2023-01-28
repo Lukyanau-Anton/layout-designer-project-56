@@ -41,22 +41,6 @@ footer {
 
         position: relative;
       }
-
-      a::before {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        height: 2px;
-        width: 0;
-        background: rgb(248, 0, 120);
-        border-radius: 50px;
-        transition: width 0.3s ease;
-      }
-    
-      a:hover::before {
-        width: 3px;
-      }
     }
 
     .column:last-child {      
