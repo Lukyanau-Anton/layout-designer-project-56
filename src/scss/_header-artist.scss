@@ -51,4 +51,16 @@
       background: $red;
     }
   }
+
+  nav {
+    .menu {
+      .main {
+        color: $dark-gray;
+      }
+
+      .artists {
+        color: #fff;
+      }
+    }
+  }
 }

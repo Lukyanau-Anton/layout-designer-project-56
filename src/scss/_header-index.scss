@@ -45,7 +45,7 @@ nav {
         font-size: 11px;
         line-height: 16px;
 
-        color: $dark-gray;
+        color: #fff;
         text-transform: uppercase;
       }
     }
@@ -154,4 +154,12 @@ nav {
   color: #FFFFFF;
 
   cursor: pointer;
+}
+
+.index {
+  .menu {
+    .main {
+      color: #fff;
+    }
+  }
 }
