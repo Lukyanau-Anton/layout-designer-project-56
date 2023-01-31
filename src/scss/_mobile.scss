@@ -1,0 +1,185 @@
+@media  (max-width: 1240px) {
+//-----------------------body style-----------------
+  .wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+//---------------------header-navigation-------------------
+  nav {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+
+    width: calc(100% - 20px);
+    left: 20px;
+    .search {
+      .site-search {
+        min-width: 374px;
+      }
+    }
+  }
+//------------------- page-pricing-----------------------
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+
+    margin-bottom: 19px;
+  }
+
+  .pricing-item {
+    min-width: 374px;
+
+    .pricing-title {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+//-------------------page-news-----------------------
+  .news {
+    .news-item {
+      flex-direction: column;
+      align-items: center;
+
+      &.second-news {
+        flex-direction: column-reverse;
+      }
+
+      .artist-img {
+        width: 374px;
+        height: 186px;
+      }
+
+      .news-body {
+        
+        h3 {
+          font-size: 16px;
+
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  //--------------------page-app---------------------
+
+  #page-app {
+
+    .content {
+      flex-direction: column-reverse;
+      gap: 16px;
+    }
+  }
+
+  //----------------footer-------------------
+
+  footer {
+    
+    .top-row {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .bottom-row {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+//----------------body style---------------------------
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }    
+
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+//------------------header-navigation-------------------
+  nav {
+    left: 20px;
+    .container-logo-menu {
+      flex-direction: column;
+      gap: 17px;
+      align-items: flex-start;
+
+      .menu {
+        flex-direction: column;
+        gap: 3px;
+        align-items: flex-start;
+      }
+    }
+  }
+//-----------------------header-----------------
+  #page-description {
+    .wrapper {
+      padding-top: 250px;
+    }
+  }
+//-----------------------header-index----------------
+  .container {
+    .description {
+      margin: 16px 0;
+    }
+  }
+
+  .registr {
+    display: flex;
+    flex-direction: column;
+
+    .area-form {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+//-----------------------header-artist----------------
+  .artist {
+    header {
+      .description {
+        flex-direction: column;
+      }
+    }
+  }
+//----------------------page-popular-track-----------------
+  #page-popular-track {
+    .columns {
+      flex-direction: column;
+      gap: 25px;
+
+      .column {
+        width: 100%;
+      }
+    }
+  }
+//----------------------page-discography-----------------
+
+  #page-discography {
+
+    img {
+      width: 137px;
+      height: 137px;
+    }
+
+    h3 {
+      width: 137px;
+      word-wrap: break-word;
+    }
+  }
+
+//----------------------page-similar-----------------------
+  #page-similar {
+    
+    img {
+      width: 137px;
+      height: 137px;
+    }
+
+    p {
+      width: 137px;
+      word-wrap: break-word;
+    }
+  }
+}

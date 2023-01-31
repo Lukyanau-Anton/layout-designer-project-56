@@ -1,0 +1,54 @@
+.bg-img-artist {
+  background-image: url('../images/Morten Harket.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.artist {
+  
+  header {
+
+    .title {
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      color: #fff;
+
+      margin-bottom: 48px;
+    }
+
+    .description {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .btn {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+
+      max-width: 200px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      p {
+        font-family: Roboto;
+        font-size: 12.8px;
+        line-height: 1.5;
+        color: #fff;
+      }
+    }
+
+    .btn:nth-child(1) {
+      background: $purple;
+    }
+
+    .btn:nth-child(2) {
+      background: $red;
+    }
+  }
+}

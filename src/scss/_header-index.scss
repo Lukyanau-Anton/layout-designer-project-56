@@ -1,0 +1,157 @@
+.bg-img {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#page-description {
+  .wrapper {
+    position: relative;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  .container-logo-menu {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+
+    width: 100%;
+
+    .logo {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      
+      a {
+        font-size: 11px;
+        line-height: 16px;
+
+        color: $dark-gray;
+        text-transform: uppercase;
+      }
+    }
+
+    .menu {
+      display: flex;
+      gap: 24px;
+
+      a {
+        color: $dark-gray;
+        text-transform: uppercase;
+        
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .search {
+    .site-search {
+      padding: 5px 10px;
+
+      background-color: $dark;
+
+      color: $dark-gray;
+
+      border-radius: 50px;
+      border: none;
+
+      width: 248px;
+    }
+  }
+}
+
+
+.container {
+
+  .title {
+    text-align: center;
+  }
+  .subtitle {
+    h2 {
+      margin: 0;
+    }
+  }
+  .description {
+    margin: 31px 0 17px;  
+
+    text-align: center;
+
+    color: #fff;
+  }
+}
+
+.registr {
+  max-width: 570px;
+  width: 100%;
+
+  margin: 0 auto;
+
+  .area-form {
+    display: flex;
+    gap: 30px;
+
+    .input-field {
+      box-sizing: border-box;
+
+      min-width: 270px;
+      min-height: 50px;
+      
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+      border: 2px solid $dark-gray;
+      border-radius: 3px;
+
+      background: none;
+
+      color: #fff;
+    }
+
+    .input-field::placeholder {
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  padding: 20px 30px;
+
+  border-radius: 5px;
+  border: none;
+
+  width: 100%;
+
+  background: $green;
+
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  cursor: pointer;
+}

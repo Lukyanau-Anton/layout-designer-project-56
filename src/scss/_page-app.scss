@@ -1,0 +1,39 @@
+#page-app {
+  .wrapper {
+    padding-bottom: 100px;
+  }
+
+  .content {
+    display: flex;
+    gap: 144px;
+    align-items: center;
+
+    .left-column {
+      max-width: 600px;
+    }
+
+    .right-column {
+      line-height: 0;
+    }
+  }
+  
+  .btn {
+    margin-top: 16px;
+    padding: 16px 40px;
+    width: max-content;
+
+    border-radius: 32px;
+    background: $red;
+
+    font-size: 12.8px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 333px;
+    height: 278px;
+  }
+}
+
