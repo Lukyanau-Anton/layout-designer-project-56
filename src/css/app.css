@@ -48,7 +48,6 @@ a {
 
 .wrapper {
   width: 1200px;
-  margin: 0 auto;
 }
 
 section .wrapper {
@@ -370,9 +369,10 @@ footer a {
   text-decoration: none;
 }
 footer .top-row {
-  padding-top: 62px;
-  padding-bottom: 72px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
+  justify-content: space-between;
   gap: 40px;
 }
 footer .top-row .column {
@@ -394,8 +394,8 @@ footer .light-row {
   border: 1px solid #cacaca;
 }
 footer .bottom-row {
-  padding-top: 40px;
-  padding-bottom: 49px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   gap: 16px;
 }
